@@ -1,0 +1,22 @@
+language: "en"
+pipeline:
+    - name: "SpacyNLP"
+    - name: "SpacyTokenizer"
+    - name: "SpacyFeaturizer"
+    - name: "RegexFeaturizer"
+    - name: "LexicalSyntacticFeaturizer"
+    - name: "CountVectorsFeaturizer"
+      analyzer: "char_wb"
+      min_ngram: 1
+      max_ngram: 4
+    - name: "EntitySynonymMapper"
+    - name: "DIETClassifier"
+      epochs: 100
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: FallbackPolicy
+  - name: MemoizationPolicy
+  - name: FormPolicy
+  - name: MappingPolicy
