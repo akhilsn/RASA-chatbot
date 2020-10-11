@@ -1,7 +1,8 @@
 ### Problem Statement
 
-An Indian startup named 'Foodie' wants to build a conversational bot (chatbot) which can help users discover restaurants across several Indian cities. You have been hired as the lead data scientist for creating this product. 
-The main purpose of the bot is to help users discover restaurants quickly and efficiently and to provide a good restaurant discovery experience. The project brief provided to you is as follows.The bot takes the following inputs from the user:
+For a hypotehtical Indian startup named 'Foodie' lets build a conversational bot (chatbot) which can help users discover restaurants across several Indian cities.
+The main purpose of the bot is to help users discover restaurants quickly and efficiently and to provide a good restaurant discovery experience. 
+The bot takes the following inputs from the user:
 - **City**: Take the input from the customer as a text field. For example:
     - Bot: In which city are you looking for restaurants?
     - User: anywhere in Delhi
@@ -32,10 +33,10 @@ The main purpose of the bot is to help users discover restaurants quickly and ef
             
 ### Important Notes
 
-- Assume that Foodie works only in Tier-1 and Tier-2 cities
-- The bot should be able to identify common synonyms of city names, such as Bangalore/Bengaluru, Mumbai/Bombay etc.
-- Your chatbot should provide results for tier-1 and tier-2 cities only, while for tier-3 cities, it should reply back with something like _"We do not operate in that area yet"_.
-- While showing the results to the user, the bot should display the top 5 restaurants in a sorted order (descending) of the average Zomato user rating (on a scale of 1-5, 5 being the highest). The format should be: {restaurant_name} in {restaurant_address} has been rated {rating}.
+- The bot would only work for Tier-1 and Tier-2 cities in India (I have extracted Tier1 and Tier2 cities in India from wikipedia), since for smaller cities, there is not enough restaurant database with us.
+- Our chatbot should provide results for tier-1 and tier-2 cities only, while for tier-3 cities, it should reply back with something like _"We do not operate in that area yet"_.
+- Our bot would be able to identify common synonyms of city names, such as Bangalore/Bengaluru, Mumbai/Bombay etc.
+- While showing the results to the user, the bot would display the top 5 restaurants in a sorted order (descending) of the average Zomato user rating (on a scale of 1-5, 5 being the highest). The format would be: {restaurant_name} in {restaurant_address} has been rated {rating}.
 
 
 ### Versions
